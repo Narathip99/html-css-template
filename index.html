@@ -11,7 +11,7 @@
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Title -->
-    <title>เว็บไซต์</title>
+    <title>ท่องเที่ยว</title>
 </head>
 
 <body>
@@ -23,7 +23,7 @@
     <!-- Header -->
     <header>
         <nav class="container">
-            <span>LOGO</span>
+            <span class="logo">ท่องเที่ยว</span>
             <ul>
                 <li>
                     <a href="#section-a">Section A</a>
@@ -42,9 +42,54 @@
     </header>
 
     <!-- Hero Banner -->
-    <section class="hero-banner">
-        <div class="container">
-            <h1>Hero Banner</h1>
+    <section id="hero-banner">
+        <div id="slider">
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+            <input type="radio" name="slider" id="slide3">
+            <input type="radio" name="slider" id="slide4">
+            <div id="slides">
+                <div id="overflow">
+                    <div class="inner">
+                        <div class="slide slide_1">
+                            <div class="slide-content">
+                                <h2>Lorem Ipsum</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, aut!</p>
+                            </div>
+                        </div>
+                        <div class="slide slide_2">
+                            <div class="slide-content">
+                                <h2>Lorem Ipsum</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ipsum suscipit,
+                                    nesciunt magni similique ipsam?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="slide slide_3">
+                            <div class="slide-content">
+                                <h2>Lorem Ipsum</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio perferendis consectetur
+                                    officia.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="slide slide_4">
+                            <div class="slide-content">
+                                <h2>Lorem Ipsum</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia laudantium atque
+                                    quisquam et, adipisci nesciunt eligendi quibusdam mollitia! Ab, laboriosam.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="controls">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+                <label for="slide4"></label>
+            </div>
         </div>
     </section>
 
@@ -56,11 +101,23 @@
             veritatis similique minus modi illum deserunt a quam dolores aperiam minima! Nostrum dolores placeat laborum
             reiciendis!
         </p>
-        <figure>
-            <img src="https://placehold.co/400x300" alt="">
-            <img src="https://placehold.co/400x300" alt="">
-            <img src="https://placehold.co/400x300" alt="">
-        </figure>
+        <div class="wrapper">
+            <figure>
+                <img src="https://images.unsplash.com/photo-1470240731273-7821a6eeb6bd?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="lorem ipsum<">
+                <p>lorem ipsum</p>
+            </figure>
+            <figure>
+                <img src="https://images.unsplash.com/photo-1498429089284-41f8cf3ffd39?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="lorem ipsum<">
+                <p>lorem ipsum</p>
+            </figure>
+            <figure>
+                <img src="https://images.unsplash.com/photo-1511884642898-4c92249e20b6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="lorem ipsum<">
+                <p>lorem ipsum</p>
+            </figure>
+        </div>
     </section>
 
     <!-- Section B -->
@@ -73,14 +130,14 @@
                 maiores suscipit illum blanditiis, delectus autem quis quam non assumenda accusantium deserunt rerum
                 nihil reiciendis necessitatibus.
             </p>
-            <a href="#">More</a>
+            <a><span>More</span></a>
         </div>
         <!-- right -->
         <div class="right">
             <ul>
                 <li>
-                    <img src="https://placehold.co/30" alt="">
-                    <div class="text-group">
+                    <i class="fa-brands fa-facebook"></i>
+                    <div>
                         <p class="title">Heading</p>
                         <p class="description">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, at.
@@ -88,8 +145,8 @@
                     </div>
                 </li>
                 <li>
-                    <img src="https://placehold.co/30" alt="">
-                    <div class="text-group">
+                    <i class="fa-brands fa-facebook-messenger"></i>
+                    <div>
                         <p class="title">Heading</p>
                         <p class="description">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, at.
@@ -97,8 +154,8 @@
                     </div>
                 </li>
                 <li>
-                    <img src="https://placehold.co/30" alt="">
-                    <div class="text-group">
+                    <i class="fa-brands fa-line"></i>
+                    <div>
                         <p class="title">Heading</p>
                         <p class="description">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, at.
@@ -111,16 +168,16 @@
 
     <!-- Section C -->
     <section id="section-c">
-        <h1>Section C</h1>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, qui! Perferendis, obcaecati magnam quasi
-            molestias iure ullam inventore odio quam laboriosam suscipit voluptatibus, corrupti explicabo facere
-            consequatur aliquid excepturi! Voluptatibus!
-        </p>
+        <div class="inner">
+            <h1>Section C</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
 
-        <div class="input-group">
-            <input type="text">
-            <button type="submit">Submit</button>
+            <div class="input-group">
+                <input type="text">
+                <button type="submit">Submit</button>
+            </div>
         </div>
     </section>
 
@@ -132,17 +189,56 @@
             molestias iure ullam inventore odio quam laboriosam suscipit voluptatibus, corrupti explicabo facere
             consequatur aliquid excepturi! Voluptatibus!
         </p>
-        <div class="wrapper">
-            <img src="https://placehold.co/300x200" alt="">
-            <img src="https://placehold.co/300x200" alt="">
-            <img src="https://placehold.co/300x200" alt="">
-            <img src="https://placehold.co/300x200" alt="">
+        <div class="blogs-wrapper">
+            <div class="blog-item">
+                <img src="https://placehold.co/300x200" alt="">
+                <div>
+                    <p class="title">Heading</p>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, at.
+                    </p>
+                </div>
+            </div>
+            <div class="blog-item">
+                <img src="https://placehold.co/300x200" alt="">
+                <div>
+                    <p class="title">Heading</p>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, at.
+                    </p>
+                </div>
+            </div>
+            <div class="blog-item">
+                <img src="https://placehold.co/300x200" alt="">
+                <div>
+                    <p class="title">Heading</p>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, at.
+                    </p>
+                </div>
+            </div>
+            <div class="blog-item">
+                <img src="https://placehold.co/300x200" alt="">
+                <div>
+                    <p class="title">Heading</p>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, at.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>footer</p>
+        <div class="container">
+            <p>ABC School</p>
+            <ul>
+                <li><a href="#">Link A</a></li>
+                <li><a href="#">Link B</a></li>
+                <li><a href="#">Link C</a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 
